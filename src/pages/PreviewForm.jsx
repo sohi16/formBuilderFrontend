@@ -25,7 +25,7 @@ export const PreviewForm = (props) => {
         console.log("formid", formId);
         if (formId) {
 
-            fetch(`http://localhost:5000/?formId=${formId}`)
+            fetch(`https://form-builder-app-8yic.onrender.com/?formId=${formId}`)
                 .then((res) => res.json())
                 .then((res) => {
                     console.log('Data from server:', res);
@@ -81,7 +81,7 @@ export const PreviewForm = (props) => {
         }
 
         let obj = { name, email, formId, response }
-        fetch(`http://localhost:5000/create`, {
+        fetch(`https://form-builder-app-8yic.onrender.com/create`, {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(obj)

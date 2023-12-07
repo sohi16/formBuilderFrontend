@@ -64,7 +64,7 @@ export const CreateForm = (state) => {
         
         
             try {
-              const response = await fetch('http://localhost:5000/createForm', {
+              const response = await fetch('https://form-builder-app-8yic.onrender.com/createForm', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
