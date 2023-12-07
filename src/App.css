@@ -1,0 +1,17 @@
+/* App.css */
+
+.app-container {
+    display: flex; /* Use flexbox to align containers */
+    height: 100vh; /* Set the height of the app container to the full viewport height */
+  }
+  
+  .left-side {
+    width: 250px; /* Set the width of the left-side menu container */
+    
+  }
+  
+  .right-side {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add padding for content */
+  }
+  
